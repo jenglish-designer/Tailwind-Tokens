@@ -51,6 +51,23 @@ npm run dev
 
 Open the URL shown in the terminal to see the Pricing page. Change a token in `src/index.css`, save, and the app updates live.
 
+### Dark theme (how to switch theme)
+
+This project’s Tailwind classes (`bg-surface`, `text-text-primary`, `bg-btn-primary`, etc.) are powered by CSS variables in `src/index.css`.
+To switch themes, we override those same variables under `[data-theme="dark"]`.
+
+- **Option A (HTML switch)**: set the attribute on the page root in `src/index.html`:
+
+```html
+<html lang="en" data-theme="dark">
+```
+
+- **Option B (JS switch)**: toggle at runtime:
+
+```js
+document.documentElement.dataset.theme = 'dark';  // or 'light'
+```
+
 ---
 
 ## Project structure

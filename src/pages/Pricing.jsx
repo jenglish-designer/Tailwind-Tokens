@@ -29,7 +29,7 @@ function Pricing() {
 
     return (
         <>
-            <p className="fixed top-4 left-1/2 -translate-x-1/2 text-sm text-text-secondary bg-white px-4 py-2 rounded-lg shadow-sm">
+            <p className="fixed top-4 left-1/2 -translate-x-1/2 text-sm text-text-secondary bg-card px-4 py-2 rounded-lg shadow-sm">
                 <strong className="text-text-primary">React App</strong> — running with Vite + Tailwind Tokens
             </p>
 
