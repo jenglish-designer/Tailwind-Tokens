@@ -14,4 +14,11 @@ export default defineConfig({
     tailwindcss(),   // Scans your JSX for Tailwind classes and builds only the CSS you actually use
   ],
   root: 'src',
+  server: {
+    watch: {
+      // Dropbox-synced folders can miss filesystem events; polling makes HMR reliable.
+      usePolling: true,
+      interval: 150,
+    },
+  },
 });
